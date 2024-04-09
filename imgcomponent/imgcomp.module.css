@@ -1,0 +1,53 @@
+.imgcontainer {
+  height: 500px;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(2, 245px);
+  gap: 10px;
+  overflow: hidden;
+}
+
+.imgcontainer img {
+  display: block;
+  transition: transform 0.4s;
+}
+
+.img0 {
+  height: 500px;
+  width: 50vw;
+ 
+  grid-column: 1/3;
+}
+
+.img1 {
+  height: 250px;
+  width: 25vw;
+  grid-column: 3/4;
+ 
+}
+
+.img2 {
+  height: 250px;
+  width: 25vw;
+  grid-column: 4/5;
+}
+
+.img3 {
+  height: 250px;
+  width: 25vw;
+  grid-column: 3/4;
+ 
+}
+
+.img4 {
+  height: 250px;
+  width: 25vw;
+  grid-column: 4/5;
+  
+}
+
+.imgcontainer img:hover {
+  transform: scale(1.02);
+  transform-origin: 50% 50%;
+}
